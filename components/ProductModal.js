@@ -24,7 +24,7 @@ export default function ProductModal({ product, onClose }) {
 
   if (!product) return null;
 
-  const cta = product.soldOut ? "ask about this" : "request / commission";
+  const cta = product.soldOut ? "request one" : "buy now";
   const description =
     product.description ||
     "a handmade little make, hooked up with a lot of love. message me and i'll sort the details with you ♥";

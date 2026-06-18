@@ -10,7 +10,7 @@ const TILTS = [-2, 1.5, -1, 2, -1.5, 1, -2, 1.2, -0.8];
 // Clicking the card (anywhere but the CTA) opens the detail pop-out.
 export default function ProductCard({ product, index = 0, onOpen }) {
   const tilt = TILTS[index % TILTS.length];
-  const cta = product.soldOut ? "ask about this" : "request / commission";
+  const cta = product.soldOut ? "request one" : "buy now";
 
   return (
     <div
