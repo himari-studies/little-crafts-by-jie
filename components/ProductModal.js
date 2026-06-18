@@ -211,7 +211,7 @@ export default function ProductModal({ product, onClose }) {
 
             <a
               className="nudge"
-              href={LINKS.commissionForm}
+              href={product.soldOut ? LINKS.commissionForm : LINKS.paymentForm}
               target="_blank"
               rel="noopener"
               style={{

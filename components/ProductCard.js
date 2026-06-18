@@ -136,7 +136,7 @@ export default function ProductCard({ product, index = 0, onOpen }) {
         )}
         <a
           className="nudge"
-          href={LINKS.commissionForm}
+          href={product.soldOut ? LINKS.commissionForm : LINKS.paymentForm}
           target="_blank"
           rel="noopener"
           onClick={(e) => e.stopPropagation()}
