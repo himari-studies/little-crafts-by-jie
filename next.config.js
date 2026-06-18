@@ -2,8 +2,9 @@
 
 // GitHub Pages serves a *project* site under /<repo-name>/.
 // Set `repo` to your repository name. If you use a custom domain
-// (e.g. littlecraftsbyjie.com) OR a <username>.github.io repo, set repo = ''.
-const repo = "little-crafts-by-jie";
+// (e.g. littlecraftsbyjie.site) OR a <username>.github.io repo, set repo = ''.
+// Using the custom domain littlecraftsbyjie.site, so this is empty (serves at root).
+const repo = "";
 const isProd = process.env.NODE_ENV === "production";
 const basePath = isProd && repo ? `/${repo}` : "";
 
